@@ -1,14 +1,843 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>App</title>
+    <title>Стоп стрес</title>
     <link
       rel="stylesheet"
       href="node_modules/modern-normalize/modern-normalize.css"
     />
     <link rel="stylesheet" href="./src/css/styles.css" />
   </head>
-  <body></body>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="start-container">
+          <div class="start-box">
+            <p class="start-text">Онлайн-курс</p>
+            <p class="start-date">Старт 7 червня</p>
+          </div>
+        </div>
+        <h1 class="header-title">Стоп стрес</h1>
+        <p class="header-subtitle">
+          Втомилися від гострого стресу та постійної напруги?
+        </p>
+        <p class="header-desc">
+          Відновіть спокій і поверніться до нормального життя всього за кілька
+          днів завдяки перевіреним антистресовим методикам
+        </p>
+        <div class="button-container">
+          <a class="header-button link" href="#form">ДЕТАЛЬНІШЕ</a>
+          <div class="header-sale-mark">
+            <picture
+              ><source
+                srcset="
+                  ./src/images/header-mark-1x.png 1x,
+                  ./src/images/header-mark-2x.png 2x
+                "
+                media="(min-width: 320px)"
+                width="56"
+                height="56" />
+              <img
+                class="sale-mark"
+                src="./src/images/header-mark-1x.png"
+                alt="sale"
+                width="56"
+                height="56"
+            /></picture>
+            <p class="sale-number">-93%</p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="under-header">
+        <div class="container">
+          <div class="bonus-container">
+            <h2 class="bonus-title">
+              Встигни зареєструватись <span>до кінця доби і забери</span>
+            </h2>
+            <div class="bonus-wrapper">
+              <picture
+                ><source
+                  srcset="
+                    ./src/images/gift-mobile-1x.png 1x,
+                    ./src/images/gift-mobile-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  width="60"
+                  height="60" />
+                <img
+                  class="bonus-image"
+                  src="./src/images/gift-mobile-1x.png"
+                  alt="gift"
+                  width="60"
+                  height="60"
+              /></picture>
+              <ul class="bonus-list list">
+                <li class="list-item">
+                  – Відео-інтерв'ю з остеопатом-кінезіологом: «Стрес у тілі» (де
+                  пояснюється наслідки стресу на рівні фізики тіла: де
+                  залишається стрес , а також подано чіткі рекомендації як можна
+                  собі швидко допомогти самостійно)
+                </li>
+                <li class="list-item">
+                  – Тест визначення вашого поточного рівня стресу
+                </li>
+                <li class="list-item">
+                  – Лікувальний протокол харчування при стресі (практичні
+                  рекомендації)
+                </li>
+              </ul>
+            </div>
+            <div id="countdown" class="countdown">
+              <div class="countdown-number">
+                <span class="hours countdown-time"></span>
+              </div>
+              <div><span class="countdown-doubledot"></span></div>
+              <div class="countdown-number">
+                <span class="minutes countdown-time"></span>
+              </div>
+              <div><span class="countdown-doubledot"></span></div>
+              <div class="countdown-number">
+                <span class="seconds countdown-time"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="for-you">
+        <div class="container">
+          <h2 class="for-you-title">
+            цей курс для тебе: <span>Якщо ти:</span>
+          </h2>
+          <ul class="for-you-list list">
+            <li class="list-item">
+              <div>
+                <picture
+                  ><source
+                    srcset="
+                      ./src/images/for-you/for-you-01-1x.jpg 1x,
+                      ./src/images/for-you/for-you-01-2x.jpg 2x
+                    "
+                    width="120"
+                    height="120"
+                    media="(min-width: 320px)" />
+                  <img
+                    width="120"
+                    height="120"
+                    class="for-you-image"
+                    src="./src/images/for-you/for-you-01-1x.jpg"
+                    alt="image"
+                /></picture>
+              </div>
+              <div>
+                <p class="item-title">Відчуваєш,що у твоєму житті криза</p>
+                <p class="item-text">і стрес тисне на тебе</p>
+              </div>
+            </li>
+            <li class="list-item">
+              <div>
+                <picture
+                  ><source
+                    srcset="
+                      ./src/images/for-you/for-you-02-1x.jpg 1x,
+                      ./src/images/for-you/for-you-02-2x.jpg 2x
+                    "
+                    width="120"
+                    height="120"
+                    media="(min-width: 320px)" />
+                  <img
+                    width="120"
+                    height="120"
+                    class="for-you-image"
+                    src="./src/images/for-you/for-you-02-1x.jpg"
+                    alt="image"
+                /></picture>
+              </div>
+              <div>
+                <p class="item-title">
+                  Проходиш складний період у своєму житті,
+                </p>
+                <p class="item-text">
+                  такий як труднощі на роботі, фінансова криза, розлучення,
+                  зміна роботи, втрата близького
+                </p>
+              </div>
+            </li>
+            <li class="list-item">
+              <div>
+                <picture
+                  ><source
+                    srcset="
+                      ./src/images/for-you/for-you-03-1x.jpg 1x,
+                      ./src/images/for-you/for-you-03-2x.jpg 2x
+                    "
+                    width="120"
+                    height="120"
+                    media="(min-width: 320px)" />
+                  <img
+                    width="120"
+                    height="120"
+                    class="for-you-image"
+                    src="./src/images/for-you/for-you-03-1x.jpg"
+                    alt="image"
+                /></picture>
+              </div>
+              <div>
+                <p class="item-title">Часто відчуваєш</p>
+                <p class="item-text">підвищену тривожність</p>
+              </div>
+            </li>
+            <li class="list-item">
+              <div>
+                <picture
+                  ><source
+                    srcset="
+                      ./src/images/for-you/for-you-04-1x.jpg 1x,
+                      ./src/images/for-you/for-you-04-2x.jpg 2x
+                    "
+                    width="120"
+                    height="120"
+                    media="(min-width: 320px)" />
+                  <img
+                    width="120"
+                    height="120"
+                    class="for-you-image"
+                    src="./src/images/for-you/for-you-04-1x.jpg"
+                    alt="image"
+                /></picture>
+              </div>
+              <div>
+                <p class="item-title">Не справляєшся з напругою</p>
+                <p class="item-text">і хочеш вже сісти на антидепресанти</p>
+              </div>
+            </li>
+            <li class="list-item">
+              <div>
+                <picture
+                  ><source
+                    srcset="
+                      ./src/images/for-you/for-you-05-1x.jpg 1x,
+                      ./src/images/for-you/for-you-05-2x.jpg 2x
+                    "
+                    width="120"
+                    height="120"
+                    media="(min-width: 320px)" />
+                  <img
+                    width="120"
+                    height="120"
+                    class="for-you-image"
+                    src="./src/images/for-you/for-you-05-1x.jpg"
+                    alt="image"
+                /></picture>
+              </div>
+              <div>
+                <p class="item-title">Підприємць і тобі не вистачає сил</p>
+                <p class="item-text">
+                  на постійну боротьбу з конкурентами, гонитву за клієнтами
+                </p>
+              </div>
+            </li>
+            <li class="list-item">
+              <div>
+                <picture
+                  ><source
+                    srcset="
+                      ./src/images/for-you/for-you-06-1x.jpg 1x,
+                      ./src/images/for-you/for-you-06-2x.jpg 2x
+                    "
+                    width="120"
+                    height="120"
+                    media="(min-width: 320px)" />
+                  <img
+                    width="120"
+                    height="120"
+                    class="for-you-image"
+                    src="./src/images/for-you/for-you-06-1x.jpg"
+                    alt="image"
+                /></picture>
+              </div>
+              <div>
+                <p class="item-title">Втратив стабільність</p>
+                <p class="item-text">у житті у зв'язку з кризою у відносинах</p>
+              </div>
+            </li>
+            <li class="list-item">
+              <div>
+                <picture
+                  ><source
+                    srcset="
+                      ./src/images/for-you/for-you-07-1x.jpg 1x,
+                      ./src/images/for-you/for-you-07-2x.jpg 2x
+                    "
+                    width="120"
+                    height="120"
+                    media="(min-width: 320px)" />
+                  <img
+                    width="120"
+                    height="120"
+                    class="for-you-image"
+                    src="./src/images/for-you/for-you-07-1x.jpg"
+                    alt="image"
+                /></picture>
+              </div>
+              <div>
+                <p class="item-title">Знаходишся в періоді адаптації</p>
+                <p class="item-text">
+                  до нових умов життя в іншій країні (переїзд), до нової роботи
+                </p>
+              </div>
+            </li>
+            <li class="list-item">
+              <div>
+                <picture
+                  ><source
+                    srcset="
+                      ./src/images/for-you/for-you-08-1x.jpg 1x,
+                      ./src/images/for-you/for-you-08-2x.jpg 2x
+                    "
+                    width="120"
+                    height="120"
+                    media="(min-width: 320px)" />
+                  <img
+                    width="120"
+                    height="120"
+                    class="for-you-image"
+                    src="./src/images/for-you/for-you-08-1x.jpg"
+                    alt="image"
+                /></picture>
+              </div>
+              <div>
+                <p class="item-title">
+                  Періодично відчуваєш безпричинні сплески
+                </p>
+                <p class="item-text">
+                  агресії, дратівливості або навпаки апатії та безсилля
+                  (знаходишся на емоційних гойдалках)
+                </p>
+              </div>
+            </li>
+            <li class="list-item">
+              <div>
+                <picture
+                  ><source
+                    srcset="
+                      ./src/images/for-you/for-you-09-1x.jpg 1x,
+                      ./src/images/for-you/for-you-09-2x.jpg 2x
+                    "
+                    width="120"
+                    height="120"
+                    media="(min-width: 320px)" />
+                  <img
+                    width="120"
+                    height="120"
+                    class="for-you-image"
+                    src="./src/images/for-you/for-you-09-1x.jpg"
+                    alt="image"
+                /></picture>
+              </div>
+              <div>
+                <p class="item-title">Іноді відчуваєш,</p>
+                <p class="item-text">що не вистачає сил на багатозадачність</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="about-author">
+        <div class="container">
+          <h2 class="about-author-title">ПРО АВТОРА</h2>
+          <ul class="about-author-list list">
+            <li class="list-item">
+              <span>17+</span>років у практичній медецині
+            </li>
+            <li class="list-item">
+              <span>36 000+</span>проконсультованих пацієнтів з різною
+              патологією
+            </li>
+          </ul>
+        </div>
+        <div class="about-author-container">
+          <h3 class="author-name">Ірина Галенко</h3>
+          <p class="author-role">інтегративний лікар</p>
+          <p class="author-desc">
+            Маю кілька спеціалізацій і, зокрема, Міжнародний диплом
+          </p>
+        </div>
+      </section>
+      <section class="author-info">
+        <ul class="author-info-list list">
+          <li class="list-item">
+            <div class="item-box">
+              <div>
+                <p class="item-title">Спікер наукових конференцій</p>
+                <p class="item-text">
+                  Спікер на ТБ. Засновниця унікальної медичної студії корекції
+                  фігури для жінок у Харкові. Автор системи відновлення
+                  нейромедіаторів під час хронічного стресу. Поєдную методики
+                  традиційної та холістичної медицини, нутриціології,
+                  траволікування, а також психосоматичної корекції
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="list-item">
+            <div class="item-box">
+              <div>
+                <p class="item-title">
+                  Сама особисто неодноразово проходила через гострий стрес
+                </p>
+                <p class="item-text">
+                  та його наслідки на організм (була 2 роки директором
+                  онкологічної клініки в Україні та перебувала у постійному
+                  темпі та багатозадачності; досвід відкриття з нуля власної
+                  медичної студії та стрес підприємництва в період COVIDa;
+                  змінила вже 4 міста для проживання та клініки для роботи за
+                  останні 2 роки після початку війни в Україні), внаслідок чого
+                  заглибилася у знання нейробіології, та розробила систему
+                  медичної та психологічної корекції виходу зі стресу, та
+                  відновлення роботи нервової системи
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="about-course">
+        <div class="container">
+          <h2 class="about-course-title">ПРО курс</h2>
+          <ul class="about-course-list list">
+            <li class="list-item">
+              Курс складається з коротких чітких уроків, де зібрано максимально
+              корисну практичну інформацію без зайвої води
+            </li>
+            <li class="list-item">
+              Також чіткі письмові рекомендації про те, як можна підтримати себе
+              і що пропити самостійно
+            </li>
+            <li class="list-item">
+              Прослухавши всі матеріали ви відразу зможете забрати собі і
+              впровадити чіткі техніки впливу і відновлення організму від стресу
+            </li>
+          </ul>
+          <div class="bonus-container pro-course">
+            <h2 class="bonus-title">
+              Встигни зареєструватись <span>до кінця доби і забери</span>
+            </h2>
+            <div class="bonus-wrapper pro-course">
+              <picture
+                ><source
+                  srcset="
+                    ./src/images/gift-mobile-1x.png 1x,
+                    ./src/images/gift-mobile-2x.png 2x
+                  "
+                  media="(min-width: 320px)"
+                  width="60"
+                  height="60" />
+                <img
+                  class="bonus-image"
+                  src="./src/images/gift-mobile-1x.png"
+                  alt="gift"
+                  width="60"
+                  height="60"
+              /></picture>
+              <ul class="bonus-list list">
+                <li class="list-item">
+                  – Відео-інтерв'ю з остеопатом-кінезіологом: «Стрес у тілі» (де
+                  пояснюється наслідки стресу на рівні фізики тіла: де
+                  залишається стрес , а також подано чіткі рекомендації як можна
+                  собі швидко допомогти самостійно)
+                </li>
+                <li class="list-item">
+                  – Тест визначення вашого поточного рівня стресу
+                </li>
+                <li class="list-item">
+                  – Лікувальний протокол харчування при стресі (практичні
+                  рекомендації)
+                </li>
+              </ul>
+            </div>
+            <div id="countdown-two" class="countdown">
+              <div class="countdown-number">
+                <span class="hours-two countdown-time-two"></span>
+              </div>
+              <div><span class="countdown-doubledot-two"></span></div>
+              <div class="countdown-number">
+                <span class="minutes-two countdown-time-two"></span>
+              </div>
+              <div><span class="countdown-doubledot-two"></span></div>
+              <div class="countdown-number">
+                <span class="seconds-two countdown-time-two"></span>
+              </div>
+            </div>
+          </div>
+          <div class="course-program-container">
+            <h2 class="course-program-title">ПРОГРАМА КУРСУ</h2>
+            <ul class="course-program-list list">
+              <li class="list-item">
+                <p class="item-number">1 УРОК</p>
+                <p class="item-text">
+                  <span>Що таке стрес?</span> Як він руйнує наш організм? І чому
+                  це «лагідний вбивця» для нашого здоров'я?
+                </p>
+              </li>
+              <li class="list-item">
+                <p class="item-number">2 УРОК</p>
+                <p class="item-text">
+                  <span>Ваша точка А.</span> Check-up аналізи енергобалансу
+                </p>
+              </li>
+              <li class="list-item">
+                <p class="item-number">3 УРОК</p>
+                <p class="item-text">
+                  <span>Механізм реагування нашої нервової системи</span> Яна
+                  рівні нейромедіаторів та гормонів
+                </p>
+              </li>
+              <li class="list-item">
+                <p class="item-number">4 УРОК</p>
+                <p class="item-text"><span>Стресові пастки</span></p>
+              </li>
+              <li class="list-item">
+                <p class="item-number">5 УРОК</p>
+                <p class="item-text">
+                  <span>Як психічно та фізично</span> витримувати стрес
+                </p>
+              </li>
+              <li class="list-item">
+                <p class="item-number">6 УРОК</p>
+                <p class="item-text">
+                  <span>Симпатична та парасимпатична системи.</span> Практичні
+                  методи впливу на зупинку стресу
+                </p>
+              </li>
+              <li class="list-item">
+                <p class="item-number">7 УРОК</p>
+                <p class="item-text">
+                  <span>Модифікація способу життя</span> – допоміжні методи
+                  корекції стресу
+                </p>
+              </li>
+              <li class="list-item">
+                <p class="item-number">8 УРОК</p>
+                <p class="item-text">
+                  <span>Харчування під час стресу:</span> що краще їсти, щоб
+                  підтримати організм
+                </p>
+              </li>
+              <li class="list-item">
+                <p class="item-number">9 УРОК</p>
+                <p class="item-text">
+                  <span>Які мікроелементи витрачаються</span> на боротьбу зі
+                  стресом і що пити насамперед, щоб відновити ресурс організму
+                </p>
+              </li>
+            </ul>
+            <p class="course-program-desc">
+              <span>В результаті ви будете мати</span> повне розуміння, що
+              відбувається з вами під час нервового напруження і як прибрати
+              руйнівну дію гормонів стресу на тіло і на психіку
+            </p>
+            <p class="course-program-accent">
+              Адже ми всі добре знаємо, що практично всі хвороби з'являються від
+              нервів
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section-price">
+        <div class="background">
+          <div class="container">
+            <p class="price"><span>1885 грн</span> &nbsp; 377 грн</p>
+            <ul class="form-desc-list list">
+              <li class="list-item">
+                Введіть свої дані, натисніть "Купити курс" і система одразу
+                перенаправить Вас до оплати!
+              </li>
+              <li class="list-item">
+                Одразу після оплати Вам надійде доступ на пошту
+              </li>
+              <li class="list-item">
+                <span>Перевіряйте, будь ласка, папки Спам і Промоакції</span>
+              </li>
+            </ul>
+            <div class="form-container"></div>
+            <div class="bonus-container">
+              <h2 class="bonus-title">
+                Встигни зареєструватись <span>до кінця доби і забери</span>
+              </h2>
+              <div class="bonus-wrapper">
+                <picture
+                  ><source
+                    srcset="
+                      ./src/images/gift-mobile-1x.png 1x,
+                      ./src/images/gift-mobile-2x.png 2x
+                    "
+                    media="(min-width: 320px)"
+                    width="60"
+                    height="60" />
+                  <img
+                    class="bonus-image"
+                    src="./src/images/gift-mobile-1x.png"
+                    alt="gift"
+                    width="60"
+                    height="60"
+                /></picture>
+                <ul class="bonus-list list">
+                  <li class="list-item">
+                    – Відео-інтерв'ю з остеопатом-кінезіологом: «Стрес у тілі»
+                    (де пояснюється наслідки стресу на рівні фізики тіла: де
+                    залишається стрес , а також подано чіткі рекомендації як
+                    можна собі швидко допомогти самостійно)
+                  </li>
+                  <li class="list-item">
+                    – Тест визначення вашого поточного рівня стресу
+                  </li>
+                  <li class="list-item">
+                    – Лікувальний протокол харчування при стресі (практичні
+                    рекомендації)
+                  </li>
+                </ul>
+              </div>
+              <div id="countdown-three" class="countdown">
+                <div class="countdown-number">
+                  <span class="hours-three countdown-time"></span>
+                </div>
+                <div><span class="countdown-doubledot"></span></div>
+                <div class="countdown-number">
+                  <span class="minutes-three countdown-time"></span>
+                </div>
+                <div><span class="countdown-doubledot"></span></div>
+                <div class="countdown-number">
+                  <span class="seconds-three countdown-time"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="results">
+        <div class="container">
+          <div class="how-study-container">
+            <h2 class="how-study-title">Як відбувається навчання</h2>
+            <ul class="how-study-list list">
+              <li class="list-item">
+                Відразу після оплати ви будете переадресовані в телеграм канал
+                із матеріалами курсу та бонусами
+              </li>
+              <li class="list-item">
+                Також, ви зможете приєднатися до чату, де я відповідатиму на
+                запитання і періодично робитиму розбори
+              </li>
+            </ul>
+          </div>
+          <div class="results-container">
+            <h2 class="results-title">В результаті курсу ви:</h2>
+            <ul class="results-list list">
+              <li class="list-item">
+                зрозумієте що таке стрес і як саме він шкодить нашому організму
+              </li>
+              <li class="list-item">
+                матимете повне розуміння руйнівних впливів на організм: особливо
+                на нервову систему
+              </li>
+              <li class="list-item">
+                навчитесь захищатися від стресу різними доступними та простими
+                способами
+              </li>
+              <li class="list-item">
+                візьмете свій емоційний стан під контроль
+              </li>
+              <li class="list-item">
+                отримаєте практичні рекомендації, які можна використовувати все
+                життя, адже стрес присутній в житті досить часто
+              </li>
+              <li class="list-item">
+                навчитеся впливати через свою периферичну нервову систему на
+                центральну
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="section-questions">
+        <div class="container">
+          <h2 class="questions-title">ЗАПИТАННЯ, ЯКІ МОЖУТЬ ВИНИКНУТИ</h2>
+          <div class="faq-two">
+            <div class="question-two open isOpen">
+              <div class="question-two-name">
+                <p>Чи можна ці знання застосовувати в сім'ї для родичів?</p>
+                <img
+                  class="question-plus"
+                  src="./src/images/questions-plus.svg"
+                  alt="+"
+                  width="18"
+                  height="18"
+                />
+              </div>
+              <div class="content-two">
+                <p>
+                  Безумовно ТАК! Більше того - навіть потрібно! Ви зможете
+                  допомагати не тільки собі, але і своїм улюбленим близьким
+                  людям. Оскільки це загальні рекомендації для всіх
+                </p>
+              </div>
+            </div>
+            <div class="question-two">
+              <div class="question-two-name">
+                <p>А чи є гарантія результату?</p>
+                <img
+                  class="question-plus"
+                  src="./src/images/questions-plus.svg"
+                  alt="+"
+                  width="18"
+                  height="18"
+                />
+              </div>
+              <div class="content-two">
+                <p>
+                  Так, за умови, що ви не просто прослухали, а й почали щось
+                  робити. Навіть кілька простих дій вже значно наблизять вас до
+                  бажаного результату спокою та врівноваженості нервової системи
+                </p>
+              </div>
+            </div>
+            <div class="question-two">
+              <div class="question-two-name">
+                <p>
+                  Чи зможу купити препарати без рецепта, які будуть в
+                  рекомендаціях?
+                </p>
+                <img
+                  class="question-plus"
+                  src="./src/images/questions-plus.svg"
+                  alt="+"
+                  width="18"
+                  height="18"
+                />
+              </div>
+              <div class="content-two">
+                <p>
+                  Так, це дуже доступні та бюджетні кошти: їх можна придбати як
+                  в аптеці, так і в інтернет-магазинах
+                </p>
+              </div>
+            </div>
+            <div class="question-two">
+              <div class="question-two-name">
+                <p>Чи обов'язково задавати аналізи, або це за бажанням?</p>
+                <img
+                  class="question-plus"
+                  src="./src/images/questions-plus.svg"
+                  alt="+"
+                  width="18"
+                  height="18"
+                />
+              </div>
+              <div class="content-two">
+                <p>
+                  Чек ап - це суто за вашим бажанням, щоб ви мали змогу
+                  поглибитися та зрозуміти конкретний стан вашого здоров'я. І в
+                  разі потреби звернутися до спеціаліста вже з конкретною
+                  проблему. Це як компас, який зможе вказати вам напрям
+                  подальших дій
+                </p>
+              </div>
+            </div>
+            <div class="question-two">
+              <div class="question-two-name">
+                <p>Чи буде чат? Чи зможу поставити уточнюючі питання?</p>
+                <img
+                  class="question-plus"
+                  src="./src/images/questions-plus.svg"
+                  alt="+"
+                  width="18"
+                  height="18"
+                />
+              </div>
+              <div class="content-two">
+                <p>
+                  Є чат для спілкування з іншими учасниками курсу, а так само
+                  завжди є можливість задати в загальній групі уточнююче
+                  питання, і отримати на нього відповідь від мене
+                </p>
+              </div>
+            </div>
+            <div class="question-two last-question">
+              <div class="question-two-name">
+                <p>Скільки місяців доступ до курсу?</p>
+                <img
+                  class="question-plus"
+                  src="./src/images/questions-plus.svg"
+                  alt="+"
+                  width="18"
+                  height="18"
+                />
+              </div>
+              <div class="content-two">
+                <p>
+                  Доступ до матеріалів курсу на 2 місяці, і є можливість
+                  залишатися в чаті назавжди
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-deals">
+          <ul class="deals-list list">
+            <li class="list-item">
+              <a class="link" href="" target="_blank" rel="nofollow"
+                >Договір оферта</a
+              >
+            </li>
+            <li class="list-item">
+              <a class="link" href="" target="_blank" rel="nofollow"
+                >Політика конфіденційності</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-social-container">
+          <div class="mail-container">
+            <img
+              src="./src/images/gmail-icon.svg"
+              alt="gmail"
+              width="20"
+              height="20"
+            />
+            <p class="mail-link">@gmail.com</p>
+          </div>
+        </div>
+        <div class="fop-container">
+          <p class="fop-name">ФОП</p>
+        </div>
+        <a
+          class="disign-creator-link link"
+          href="https://www.instagram.com/lllcku"
+          target="_blank"
+          rel="nofollow"
+          ><div class="disign-creator">
+            <p class="create-by-text">Сайт розроблений</p>
+            <img
+              class="insta-icon"
+              src="./src/images/insta-icon.svg"
+              alt="insta"
+              width="14"
+              height="14"
+            />
+            <p class="create-by-text">@lllcku</p>
+          </div>
+        </a>
+      </div>
+    </footer>
+    <script src="./src/js/jquery-3.7.0.min.js" type="module"></script>
+    <script src="./src/js/faq.js" type="module"></script>
+    <script src="./src/js/timer.js" type="module"></script>
+  </body>
 </html>
