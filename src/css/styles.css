@@ -130,6 +130,10 @@ img {
   line-height: normal;
 }
 
+#monthElement {
+  text-transform: lowercase;
+}
+
 .header-title {
   color: #29a38d;
   font-family: 'Bebas Neue Cyrillic';
@@ -258,7 +262,7 @@ img {
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
+  line-height: 90%;
   text-transform: uppercase;
 
   margin-bottom: 20px;
@@ -279,10 +283,6 @@ img {
   margin-left: auto;
   margin-right: auto;
 
-  border-radius: 20px;
-  background: #e5f7f3;
-  padding: 30px;
-
   margin-bottom: 30px;
 }
 
@@ -295,16 +295,38 @@ img {
 .bonus-list {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 8px;
 }
 
-.list-item {
+.bonus-list .list-item {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+
+  border-radius: 20px;
+  background: #e5f7f3;
+  padding: 15px 19px;
+}
+
+.bonus-list .item-number {
+  color: #bfe6df;
+  font-family: 'Futura PT';
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
+
+.bonus-list .item-text {
   color: #2a2a2a;
   font-family: 'Futura PT';
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: 90%; /* 13.5px */
+
+  max-width: 218px;
 }
 
 /* timer */
@@ -629,6 +651,13 @@ img {
 }
 
 .author-info-list .list-item:nth-child(2) .item-text {
+  color: #2a2a2a;
+  font-family: 'Futura PT';
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%; /* 15px */
+
   max-width: 255px;
 }
 
@@ -685,13 +714,12 @@ img {
 
 /* bonus-wrapper two */
 
-.bonus-container.pro-course {
+.bonus-container.white {
   margin-bottom: 100px;
 }
 
-.bonus-wrapper.pro-course {
+.bonus-wrapper.white .list-item {
   background: #fff;
-  margin-bottom: 30px;
 }
 
 /* timer-two */
@@ -913,7 +941,52 @@ img {
 }
 
 .form-container {
-  height: 270px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.form-button {
+  display: block;
+  color: #2a2a2a;
+  text-align: center;
+  font-family: 'Futura PT';
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: normal;
+  text-transform: uppercase;
+
+  padding: 14px;
+  max-width: 266px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 50px;
+  background: #61d7be;
+
+  animation: glowing-button 1300ms infinite;
+}
+
+.form-container .header-sale-mark {
+  position: absolute;
+  top: -28px;
+  right: 0;
+  left: unset;
+}
+
+@keyframes glowing-button {
+  0% {
+    background-color: #61d7be;
+    box-shadow: 0 0 5px #61d7be;
+  }
+  50% {
+    background-color: #9ff2e1;
+    box-shadow: 0 0 20px #9ff2e1;
+  }
+  100% {
+    background-color: #61d7be;
+    box-shadow: 0 0 5px #61d7be;
+  }
 }
 
 /* results */

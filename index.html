@@ -16,7 +16,10 @@
         <div class="start-container">
           <div class="start-box">
             <p class="start-text">Онлайн-курс</p>
-            <p class="start-date">Старт 7 червня</p>
+            <p class="start-date">
+              Старт <span id="dateElement"></span>
+              <span id="monthElement"></span>
+            </p>
           </div>
         </div>
         <h1 class="header-title">Стоп стрес</h1>
@@ -56,38 +59,31 @@
         <div class="container">
           <div class="bonus-container">
             <h2 class="bonus-title">
-              Встигни зареєструватись <span>до кінця доби і забери</span>
+              Встигни зареєструватись <span>до кінця доби і забери 🎁</span>
             </h2>
             <div class="bonus-wrapper">
-              <picture
-                ><source
-                  srcset="
-                    ./src/images/gift-mobile-1x.png 1x,
-                    ./src/images/gift-mobile-2x.png 2x
-                  "
-                  media="(min-width: 320px)"
-                  width="60"
-                  height="60" />
-                <img
-                  class="bonus-image"
-                  src="./src/images/gift-mobile-1x.png"
-                  alt="gift"
-                  width="60"
-                  height="60"
-              /></picture>
               <ul class="bonus-list list">
                 <li class="list-item">
-                  – Відео-інтерв'ю з остеопатом-кінезіологом: «Стрес у тілі» (де
-                  пояснюється наслідки стресу на рівні фізики тіла: де
-                  залишається стрес , а також подано чіткі рекомендації як можна
-                  собі швидко допомогти самостійно)
+                  <span class="item-number">1</span>
+                  <p class="item-text">
+                    Відео-інтерв'ю з остеопатом-кінезіологом: «Стрес у тілі» (де
+                    пояснюється наслідки стресу на рівні фізики тіла: де
+                    залишається стрес , а також подано чіткі рекомендації як
+                    можна собі швидко допомогти самостійно)
+                  </p>
                 </li>
                 <li class="list-item">
-                  – Тест визначення вашого поточного рівня стресу
+                  <span class="item-number">2</span>
+                  <p class="item-text">
+                    Тест визначення вашого поточного рівня стресу
+                  </p>
                 </li>
                 <li class="list-item">
-                  – Лікувальний протокол харчування при стресі (практичні
-                  рекомендації)
+                  <span class="item-number">3</span>
+                  <p class="item-text">
+                    Лікувальний протокол харчування при стресі (практичні
+                    рекомендації)
+                  </p>
                 </li>
               </ul>
             </div>
@@ -422,54 +418,47 @@
               впровадити чіткі техніки впливу і відновлення організму від стресу
             </li>
           </ul>
-          <div class="bonus-container pro-course">
+          <div class="bonus-container white">
             <h2 class="bonus-title">
-              Встигни зареєструватись <span>до кінця доби і забери</span>
+              Встигни зареєструватись <span>до кінця доби і забери 🎁</span>
             </h2>
-            <div class="bonus-wrapper pro-course">
-              <picture
-                ><source
-                  srcset="
-                    ./src/images/gift-mobile-1x.png 1x,
-                    ./src/images/gift-mobile-2x.png 2x
-                  "
-                  media="(min-width: 320px)"
-                  width="60"
-                  height="60" />
-                <img
-                  class="bonus-image"
-                  src="./src/images/gift-mobile-1x.png"
-                  alt="gift"
-                  width="60"
-                  height="60"
-              /></picture>
+            <div class="bonus-wrapper white">
               <ul class="bonus-list list">
                 <li class="list-item">
-                  – Відео-інтерв'ю з остеопатом-кінезіологом: «Стрес у тілі» (де
-                  пояснюється наслідки стресу на рівні фізики тіла: де
-                  залишається стрес , а також подано чіткі рекомендації як можна
-                  собі швидко допомогти самостійно)
+                  <span class="item-number">1</span>
+                  <p class="item-text">
+                    Відео-інтерв'ю з остеопатом-кінезіологом: «Стрес у тілі» (де
+                    пояснюється наслідки стресу на рівні фізики тіла: де
+                    залишається стрес , а також подано чіткі рекомендації як
+                    можна собі швидко допомогти самостійно)
+                  </p>
                 </li>
                 <li class="list-item">
-                  – Тест визначення вашого поточного рівня стресу
+                  <span class="item-number">2</span>
+                  <p class="item-text">
+                    Тест визначення вашого поточного рівня стресу
+                  </p>
                 </li>
                 <li class="list-item">
-                  – Лікувальний протокол харчування при стресі (практичні
-                  рекомендації)
+                  <span class="item-number">3</span>
+                  <p class="item-text">
+                    Лікувальний протокол харчування при стресі (практичні
+                    рекомендації)
+                  </p>
                 </li>
               </ul>
             </div>
             <div id="countdown-two" class="countdown">
               <div class="countdown-number">
-                <span class="hours-two countdown-time-two"></span>
+                <span class="hours-two countdown-time"></span>
               </div>
-              <div><span class="countdown-doubledot-two"></span></div>
+              <div><span class="countdown-doubledot"></span></div>
               <div class="countdown-number">
-                <span class="minutes-two countdown-time-two"></span>
+                <span class="minutes-two countdown-time"></span>
               </div>
-              <div><span class="countdown-doubledot-two"></span></div>
+              <div><span class="countdown-doubledot"></span></div>
               <div class="countdown-number">
-                <span class="seconds-two countdown-time-two"></span>
+                <span class="seconds-two countdown-time" id="form"></span>
               </div>
             </div>
           </div>
@@ -551,53 +540,57 @@
         <div class="background">
           <div class="container">
             <p class="price"><span>1885 грн</span> &nbsp; 377 грн</p>
-            <ul class="form-desc-list list">
-              <li class="list-item">
-                Введіть свої дані, натисніть "Купити курс" і система одразу
-                перенаправить Вас до оплати!
-              </li>
-              <li class="list-item">
-                Одразу після оплати Вам надійде доступ на пошту
-              </li>
-              <li class="list-item">
-                <span>Перевіряйте, будь ласка, папки Спам і Промоакції</span>
-              </li>
-            </ul>
-            <div class="form-container"></div>
-            <div class="bonus-container">
-              <h2 class="bonus-title">
-                Встигни зареєструватись <span>до кінця доби і забери</span>
-              </h2>
-              <div class="bonus-wrapper">
+            <div class="form-container">
+              <a class="form-button link" href="" target="_blank" rel="nofollow"
+                >Приєднатись</a
+              >
+              <div class="header-sale-mark">
                 <picture
                   ><source
                     srcset="
-                      ./src/images/gift-mobile-1x.png 1x,
-                      ./src/images/gift-mobile-2x.png 2x
+                      ./src/images/header-mark-1x.png 1x,
+                      ./src/images/header-mark-2x.png 2x
                     "
                     media="(min-width: 320px)"
-                    width="60"
-                    height="60" />
+                    width="56"
+                    height="56" />
                   <img
-                    class="bonus-image"
-                    src="./src/images/gift-mobile-1x.png"
-                    alt="gift"
-                    width="60"
-                    height="60"
+                    class="sale-mark"
+                    src="./src/images/header-mark-1x.png"
+                    alt="sale"
+                    width="56"
+                    height="56"
                 /></picture>
+                <p class="sale-number">-93%</p>
+              </div>
+            </div>
+            <div class="bonus-container">
+              <h2 class="bonus-title">
+                Встигни зареєструватись <span>до кінця доби і забери 🎁</span>
+              </h2>
+              <div class="bonus-wrapper">
                 <ul class="bonus-list list">
                   <li class="list-item">
-                    – Відео-інтерв'ю з остеопатом-кінезіологом: «Стрес у тілі»
-                    (де пояснюється наслідки стресу на рівні фізики тіла: де
-                    залишається стрес , а також подано чіткі рекомендації як
-                    можна собі швидко допомогти самостійно)
+                    <span class="item-number">1</span>
+                    <p class="item-text">
+                      Відео-інтерв'ю з остеопатом-кінезіологом: «Стрес у тілі»
+                      (де пояснюється наслідки стресу на рівні фізики тіла: де
+                      залишається стрес , а також подано чіткі рекомендації як
+                      можна собі швидко допомогти самостійно)
+                    </p>
                   </li>
                   <li class="list-item">
-                    – Тест визначення вашого поточного рівня стресу
+                    <span class="item-number">2</span>
+                    <p class="item-text">
+                      Тест визначення вашого поточного рівня стресу
+                    </p>
                   </li>
                   <li class="list-item">
-                    – Лікувальний протокол харчування при стресі (практичні
-                    рекомендації)
+                    <span class="item-number">3</span>
+                    <p class="item-text">
+                      Лікувальний протокол харчування при стресі (практичні
+                      рекомендації)
+                    </p>
                   </li>
                 </ul>
               </div>
@@ -792,12 +785,20 @@
         <div class="footer-deals">
           <ul class="deals-list list">
             <li class="list-item">
-              <a class="link" href="" target="_blank" rel="nofollow"
+              <a
+                class="link"
+                href="https://docs.google.com/document/d/1FGjfbNs2urXupD_ni72YDCZo8Rc8IBKa/edit"
+                target="_blank"
+                rel="nofollow"
                 >Договір оферта</a
               >
             </li>
             <li class="list-item">
-              <a class="link" href="" target="_blank" rel="nofollow"
+              <a
+                class="link"
+                href="https://docs.google.com/document/d/1g7LdVJtZ8DIX2hp5NYOiapt4PwUi4T8d/edit"
+                target="_blank"
+                rel="nofollow"
                 >Політика конфіденційності</a
               >
             </li>
@@ -815,7 +816,7 @@
           </div>
         </div>
         <div class="fop-container">
-          <p class="fop-name">ФОП</p>
+          <p class="fop-name">ФОП Галенко Ірина Юріївна</p>
         </div>
         <a
           class="disign-creator-link link"
@@ -839,5 +840,7 @@
     <script src="./src/js/jquery-3.7.0.min.js" type="module"></script>
     <script src="./src/js/faq.js" type="module"></script>
     <script src="./src/js/timer.js" type="module"></script>
+    <script src="./src/js/changeDate.js" type="module"></script>
+    <script src="./src/js/scroll.js"></script>
   </body>
 </html>
